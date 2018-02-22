@@ -9,8 +9,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 <style>
+
 body {
-    background-color: teal;
+    background-color: lightblue;
 }
 img {
     border: 1px solid #ddd;
@@ -19,17 +20,91 @@ img {
     padding: 20px;
     width: 150px;
 }
+.jumbotron {
+	background-color: green;
+    color: red;
+    corners : -moz-appearance: sharp
+}
+.button {
+	color: red;
+    background-color: green;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
 </style>
 </head>
   <body>
-  
+ <div class="button">
+  <h2>Bengals</h2>
+  <button onclick="location.href='https://en.wikipedia.org/wiki/Bengal_cat'" type="button">
+     Website 1</button>
+  <button onclick="location.href='https://www.bengalcatworld.com/home/bengal-cat-facts/'" type="button">
+     Website 2</button>
+  <button onclick="location.href='https://www.thespruce.com/bengal-cats-1238154'" type="button">
+     Website 3</button>
+     </div><br>
   <div class="container">
   <div class="jumbotron">
     <h1>Bengal Cat</h1>      
     <h2>Felis catus × Prionailurus bengalensis</h2>
-    
   </div>
-  <qiv>
+  <ul>
+  <li><a href="https://haraheem.github.io/ecs71718/HTML/FavoriteAnimal.html">Favorite Animal</a></li>
+  <li><a href="https://haraheem.github.io/ecs71718/HTML/practice1.html">Practice1.html</a></li>
+  <li><a href="https://haraheem.github.io/ecs71718/HTML/table.html">Tables1.html</a></li>
+</ul> <br>
+  <div class="body">
   <div class="container">
   <div class="row">
     <div class="col-md-4">
@@ -64,5 +139,13 @@ img {
     </div>
   </div>
 </div>
+</div>
+<div class="container">
+  <h2>The Feeding Habits of Bengal Cats</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Feeding Habbits</button>
+  <div id="demo" class="collapse">
+    A great supplement of the Bengal cats diet is raw meat that is fresh and not processed. You can also make your own cat food or buy cat food from the store. If you plan to buy or make their food, make sure it comtains 50% to 80% of protein in it. The rest of the diet should contain fibers and vitamins.
+  </div>
   </body>
 </html>
